@@ -1,0 +1,221 @@
+import { StyleSheet } from "react-native";
+
+export const TMstyle = StyleSheet.create({
+  container: {
+    margin: 0,
+    padding: 0,
+    paddingTop: 20,
+    flex: 1,
+  },teacherData:{
+    position: 'relative',
+    flex: 2,
+    paddingVertical: 20,
+  },
+  dropdowns:{
+    position: 'relative',
+    flex: 1,
+  },
+  inlineContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10,
+  },
+  dropdownContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    height: 65,
+    position: 'relative',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    backgroundColor: '#fff',
+    borderWidth: 2,
+    borderRadius: 10,
+    marginHorizontal: 5, 
+    borderColor: '#000'
+  },
+  dropdownText: {
+    fontSize: 14,
+    fontFamily: 'noto-sans',
+    marginHorizontal: 5, 
+  },
+  value: {
+    fontSize: 14,
+    fontWeight: '600',
+    marginHorizontal: 10, 
+    textAlign: 'left',
+    justifyContent: 'center',
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 22,
+  },
+  modalView: {
+    position: 'relative',
+    top: 20,
+    width: '100%',
+    height: '96%',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    padding: 30,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  optionButton: {
+    padding: 10,
+    borderWidth: 2,
+    margin: 5,
+    width: 320,
+    borderColor: '#fff',
+    backgroundColor: 'transparent',
+    borderRadius: 15,
+    alignItems: 'center',
+  },
+  optionText: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#fff',
+    textAlign: 'center',
+  },
+  closeButton: {
+    marginTop: 20,
+    borderRadius: 10,
+    width: 110,
+    borderWidth: 2,
+    backgroundColor: 'transparent',
+    paddingVertical: 5,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderColor: '#fff'
+  },
+  closeIcon: {
+    color: '#fff',
+    textTransform: 'uppercase',
+  },
+  main:{
+    position: 'relative',
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  subjectBlock:{
+    position: 'relative',
+    backgroundColor: '#fff',
+    width: 325,
+    borderRadius: 15,
+    height: 300,
+    margin: 10,
+    borderWidth: 1,
+    borderColor: '#0F6CBF',
+    shadowColor: '#000',  
+    shadowOffset: { width: 0, height: 6 }, 
+    shadowOpacity: 0.75, 
+    shadowRadius: 6, 
+    elevation: 10,
+  },
+  subjectName:{
+    position: 'relative',
+    textAlign: 'center',
+    margin: 5,
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  groupData:{
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 5,
+  },
+  groupDataText:{
+    position: 'relative',
+    fontSize: 16,
+    fontFamily: 'noto-sans',
+    textAlign: 'center',
+  },
+  groupBtn:{
+    position: 'relative',
+    margin: 15,
+    borderWidth: 1.5,
+    width: 250,
+    backgroundColor: '#F8F8F8',
+    height: 30,
+    borderRadius: 10,
+    borderColor: '#0F6CBF',
+  },
+  main: {
+    padding: 20,
+  },
+  dateContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+    paddingVertical: 10,
+  },
+  dateTimeContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 50,
+  },
+  dateTimeText: {
+    fontSize: 16,
+    fontFamily: 'noto-sans',
+    textAlign: 'center',
+  },
+  removeButton: {
+    padding: 10,
+  },
+  removeIcon: {
+    color: '#ff0000',
+  },
+  addButton: {
+    marginTop: 20,
+    backgroundColor: '#007bff',
+    borderRadius: 5,
+    justifyContent: 'center',
+    height: 35,
+    alignItems: 'center',
+  },
+  addButtonText: {
+    color: '#fff',
+    textAlign: 'center',
+    fontFamily: 'noto-sans',
+    textTransform: 'uppercase',
+    fontSize: 16,
+  },
+
+  dateText:{
+    position: 'relative',
+    fontFamily: 'noto-sans',
+    fontSize: 16,
+    fontWeight: '700',
+  },separator:{
+    position: 'relative',
+    fontFamily: 'noto-sans',
+    fontSize: 16,
+    fontWeight: '700',
+  },timeText:{
+    position: 'relative',
+    fontFamily: 'noto-sans',
+    fontSize: 16,
+    fontWeight: '700',
+  }
+});
+
+
+
+
