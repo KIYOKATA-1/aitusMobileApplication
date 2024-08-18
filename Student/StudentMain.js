@@ -45,10 +45,10 @@ export default function StudentMain({ route, navigation }) {
               <Text style={Mstyle.subjectDataTxt}>
                 {item.name}
               </Text>
-            </TouchableOpacity>
-            <Text style={Mstyle.teacherText}>
+              <Text style={Mstyle.teacherText}>
               {item.teacher.name}
             </Text>
+            </TouchableOpacity>
           </View>
         )}
       />
