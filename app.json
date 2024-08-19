@@ -18,10 +18,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kiyokata.aitusMobileApplication"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fa988695-77b1-4c08-86c0-8891ca83eb4a"
+      }
+    },
+    "owner": "kiyokata"
   }
 }
