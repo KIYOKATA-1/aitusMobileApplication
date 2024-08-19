@@ -5,7 +5,7 @@ import Header from '../Components/Header';
 import { TMstyle } from '../TeacherStyles/teacherMain';
 
 export default function TeacherMain({ route, navigation }) {
-  const { userData } = route.params;
+  const { userData } = route.params || {};
   const [subjects, setSubjects] = useState([]);
 
   useEffect(() => {
@@ -39,9 +39,8 @@ export default function TeacherMain({ route, navigation }) {
   return (
     <SafeAreaView style={TMstyle.container}>
       <Header userData={userData} />
-      
+    
       <View style={TMstyle.subjectsListContainer}>
-        <Text style={TMstyle.majorDetailsTitle}>Your Subjects:</Text>
         <FlatList
           data={subjects}
           renderItem={renderSubjectItem}
