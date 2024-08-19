@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import Header from '../Components/Header';
-import AttendanceCircle from '../Components/AttendanceCircle';
 import { Mstyle } from '../StudentStyles/studentMain';
 
 export default function StudentMain({ route, navigation }) {
@@ -26,6 +25,16 @@ export default function StudentMain({ route, navigation }) {
       fetchSubjects();
   }, [userData.email]);
 
+  const getBorderColor = (attendancePercentage) => {
+    if (attendancePercentage < 70) {
+      return '#FF0000'; // Red
+    } else if (attendancePercentage >= 70 && attendancePercentage < 85) {
+      return '#CCFF00'; // Yellow
+    } else {
+      return '#00FF0A'; // Green
+    }
+  };
+
   const openAttendanceDetails = (subject) => {
       navigation.navigate('SubjectAttendanceDetails', { subject, userData });
   };
@@ -37,7 +46,7 @@ export default function StudentMain({ route, navigation }) {
               data={subjects}
               keyExtractor={item => item._id}
               renderItem={({ item }) => (
-                  <View style={Mstyle.subject}>
+                  <View style={[Mstyle.subject, { borderLeftColor: getBorderColor(item.attendancePercentage) }]}>
                       <TouchableOpacity 
                           onPress={() => openAttendanceDetails(item)} 
                           style={Mstyle.subjectButton}
@@ -48,7 +57,6 @@ export default function StudentMain({ route, navigation }) {
                           <Text style={Mstyle.teacherText}>
                               {item.teacher.name}
                           </Text>
-                          <AttendanceCircle attendance={item.attendancePercentage} color="green" />
                       </TouchableOpacity>
                   </View>
               )}
